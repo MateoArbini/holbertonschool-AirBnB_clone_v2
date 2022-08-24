@@ -11,7 +11,7 @@ import os
 
 def do_pack():
     '''function'''
-    local("mkdir -p versions")
+    local("mkdir -p versions/")
     now = datetime.now()
     file_time = now.strftime("%Y%m%d%H%M%S")
     file_name = "versions/web_static_{}.tgz".format(file_time)
