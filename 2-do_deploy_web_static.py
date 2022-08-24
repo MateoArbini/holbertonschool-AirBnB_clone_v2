@@ -30,5 +30,5 @@ def do_deploy(archive_path):
             run("ln -s " + file_name + " " + "/data/web_static/current")
             print("New version deployed!")
             return True
-        except as Exception:
+        except:
             return False
