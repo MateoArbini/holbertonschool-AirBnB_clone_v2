@@ -19,4 +19,3 @@ ln -sf /data/web_static/releases/test/ /data/web_static/current
 chown -R ubuntu:ubuntu /data/
 sed -i "54i\ \nlocation /hbnb_static/ {\n \talias /data/web_static/current/;\n}\n" /etc/nginx/sites-enabled/default
 sudo service nginx restart
-exit 0
