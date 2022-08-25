@@ -21,8 +21,9 @@ def do_pack():
     try:
         local("tar -cvzf " + file_name + " web_static")
         return "{}".format(file_name)
-    except:
+    except Exceptions:
         return None
+
 
 def do_deploy(archive_path):
     '''function'''
@@ -43,8 +44,9 @@ def do_deploy(archive_path):
             run("ln -s " + file_name + " " + "/data/web_static/current")
             print("New version deployed!")
             return True
-        except:
+        except Exceptions:
             return False
+
 
 def deploy():
     '''function'''
