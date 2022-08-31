@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 '''
 Script that starts a Flask web application
-It must listen to 0.0.0.0
+It must listen to '0.0.0.0'
 Port: 5000
 Routes:
 /: diplay "Hello HBNB!"
