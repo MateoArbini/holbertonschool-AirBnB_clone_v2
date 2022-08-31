@@ -21,10 +21,12 @@ def hello0():
     '''Display Hello HBNB!'''
     return "Hello HBNB!"
 
+
 @app.route("/hbnb", strict_slashes=False)
 def hello1():
     '''Display HBNB'''
     return "HBNB"
+
 
 @app.route("/c/<text>", strict_slashes=False)
 def ctext(text):
