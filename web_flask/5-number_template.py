@@ -9,6 +9,7 @@ Routes:
 /c/<text>: display "C" followed by the text variable(replacing "_" with a " ")
 /python/(<text>): display Python followed by the value of text
 /number/<n>: diplay n is a number only if n is int
+/number_template/<n>: return a render html with the value of var n
 Use option "strict_slashes=False" in root definition
 '''
 
