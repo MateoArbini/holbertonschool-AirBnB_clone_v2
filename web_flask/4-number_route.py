@@ -12,7 +12,6 @@ Routes:
 Use option "strict_slashes=False" in root definition
 '''
 
-from curses.ascii import isdigit
 from flask import Flask
 
 
