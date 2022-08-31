@@ -2,7 +2,7 @@
 '''
 Script that starts a Flask web application
 It must listen to 0.0.0.0
-Port 5000
+Port: 5000
 Routes:
 /: diplay "Hello HBNB!"
 Use option "strict_slashes=False" in root definition
