@@ -78,7 +78,8 @@ def evenorodd(n):
 
 
 @app.teardown_appcontext
-'''Method to remove the current SQLalq session'''
+def teardown(self):
+    '''Method to remove the current SQLalq session'''
     storage.close()
 
 
