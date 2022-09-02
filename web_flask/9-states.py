@@ -106,11 +106,14 @@ def states():
 
 
 @app.route("/states/<id>", strict_slashes=False)
-def cities():
+def cities(id=None):
     '''Display a HTML with some information'''
-    cities = storage.all(City).values()
     states = storage.all(State).values()
-    return render_template("9-states.html", cities=cities, states=states)
+    for state in states:
+        if state in states:
+            if id == state.id:
+    	        return render_template("9-states.html", state=state)
+    return render_template("9-states.html", state=None)
     
 
 if __name__ == '__main__':
