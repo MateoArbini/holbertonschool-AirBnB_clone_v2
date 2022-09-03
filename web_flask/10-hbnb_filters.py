@@ -113,16 +113,17 @@ def cities(id=None):
     for state in states:
         if state in states:
             if id == state.id:
-    	        return render_template("9-states.html", state=state)
+                return render_template("9-states.html", state=state)
     return render_template("9-states.html", state=None)
-    
+
 
 @app.route("/hbnb_filters", strict_slashes=False)
 def filters():
     '''Display a HTML with information'''
     states = storage.all(State).values()
     amenities = storage.all(Amenity).values()
-    return render_template("10-hbnb_filters.html", states=states, amenities=amenities)    
+    return render_template("10-hbnb_filters.html", states=states,
+                           amenities=amenities)
 
 
 if __name__ == '__main__':
